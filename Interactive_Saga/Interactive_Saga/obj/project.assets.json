@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\x\\.nuget\\packages\\": {}
+    "C:\\Users\\cagud\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\x\\OneDrive\\Documents\\Local souce\\Quality assurance\\Interactive_Saga\\Interactive_Saga\\Interactive_Saga\\Interactive_Saga.csproj",
+      "projectUniqueName": "C:\\Users\\cagud\\Source\\Repos\\Interactive_Story\\Interactive_Saga\\Interactive_Saga\\Interactive_Saga.csproj",
       "projectName": "Interactive_Saga",
-      "projectPath": "C:\\Users\\x\\OneDrive\\Documents\\Local souce\\Quality assurance\\Interactive_Saga\\Interactive_Saga\\Interactive_Saga\\Interactive_Saga.csproj",
-      "packagesPath": "C:\\Users\\x\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\x\\OneDrive\\Documents\\Local souce\\Quality assurance\\Interactive_Saga\\Interactive_Saga\\Interactive_Saga\\obj\\",
+      "projectPath": "C:\\Users\\cagud\\Source\\Repos\\Interactive_Story\\Interactive_Saga\\Interactive_Saga\\Interactive_Saga.csproj",
+      "packagesPath": "C:\\Users\\cagud\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\cagud\\Source\\Repos\\Interactive_Story\\Interactive_Saga\\Interactive_Saga\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\x\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\cagud\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -60,7 +60,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
