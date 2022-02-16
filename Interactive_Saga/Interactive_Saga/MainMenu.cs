@@ -5,7 +5,7 @@ public class MainMenu
     /// <summary>
     /// The message helper instance
     /// </summary>
-    private MessageHelper messageHelper = new();
+    MessageHelper messageHelper = new();
 
     /// <summary>
     /// Runs the menu.
@@ -20,12 +20,6 @@ public class MainMenu
 
             int menuInputInt = 0;
             int.TryParse(userMenuInput, out menuInputInt);
-
-            if (menuInputInt > 4 || menuInputInt < 1)
-            {
-                messageHelper.MenuErrorMessage();
-                Console.ReadKey();
-            }
 
             switch (menuInputInt)
             {
