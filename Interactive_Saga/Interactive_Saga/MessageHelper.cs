@@ -26,6 +26,7 @@ namespace Interactive_Saga
         /// </summary>
         public void MainMenuMessage()
         {
+            Console.Clear();
             Console.WriteLine("Main Menu");
             Console.ReadLine();
             Console.WriteLine("1) Go out on adventure!");
@@ -39,6 +40,7 @@ namespace Interactive_Saga
         /// </summary>
         public void RulesOfGame()
         {
+            Console.Clear();
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("RULES OF THE GAME");
             Thread.Sleep(1000);
@@ -55,7 +57,6 @@ namespace Interactive_Saga
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Enter a number between 1-4 to chose an alternative from the menu.");
             Console.ForegroundColor = ConsoleColor.White;
-            Console.ReadKey();
         }
     }
 }

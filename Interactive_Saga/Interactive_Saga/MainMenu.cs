@@ -26,6 +26,7 @@ public class MainMenu
             if ( menuInputInt > 4 || menuInputInt < 1)
             {
                 messageHelper.MenuErrorMessage();
+                Console.ReadKey();
             }
 
             switch (menuInputInt)
@@ -47,6 +48,7 @@ public class MainMenu
                     break;
                     default:
                     messageHelper.MenuErrorMessage();
+                    Console.ReadKey();
                     break;
 
             }
