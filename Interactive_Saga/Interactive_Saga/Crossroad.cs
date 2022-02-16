@@ -10,6 +10,12 @@ namespace Interactive_Saga
 
     // Ett vägskäl. User blir tillfrågad antingen om t.ex. man vill går höger eller vänster eller en lättare fråga med två alternativ. 50/50 chans att svara rätt helt enkelt. Svarar man rätt går man vidare till karaktärs-frågan, svara man fel går man tillbaka till föregående crossroad på den level man befinner sig. Svarar man rätt får man 0-1 diamanter(random).
 
+    /*
+     var rnd = new Random(); // Slumpgenerator
+var rightDir = rnd.Next(100) > 50; // 50% chans att det blir true
+Console.WriteLine($"Right direction is {(rightDir ? "left" : "right")}"); // Gör något av de 50% 
+     */
+
     internal class Crossroad
     {
         public bool CorrectAnswer { get; set; } = false;
@@ -64,7 +70,7 @@ namespace Interactive_Saga
             ReturnToPreviousCrossroadOnThisLevel();
         }
 
-        private void GoToCharacterQuestion() // Alina
+        private void GoToCharacterQuestion() // ?
         {
             throw new NotImplementedException();
         }
