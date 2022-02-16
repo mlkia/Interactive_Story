@@ -1,2 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+using Interactive_Saga;
+
+MessageHelper messageHelper = new(); // instansiera menyn
+messageHelper.WelcomeMessage(); //anropar metod för välkomstmeddelande
+
+MainMenu menu = new(); // instansiera menyn
+menu.RunMenu(/*user, universe*/); //anropa menyn
