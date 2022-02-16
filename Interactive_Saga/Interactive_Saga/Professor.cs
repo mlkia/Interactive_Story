@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace Interactive_Saga
 {
-    public class Professor // : Character
+    public class Professor : Character
     {
+       // constructor med namn och metoder
+
+
 
     }
 }
