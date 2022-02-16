@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Interactive_Saga
+﻿namespace Interactive_Saga
 {
     public class MessageHelper
     {
@@ -16,6 +10,9 @@ namespace Interactive_Saga
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("WELCOME MESSAGE TO THE USER");
             Thread.Sleep(1000);
+            Console.WriteLine("Tell me your name...");
+            string userName = Console.ReadLine();
+            Console.WriteLine("Hello " + userName);
             Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
