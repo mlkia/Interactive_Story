@@ -12,6 +12,29 @@ namespace Interactive_Saga
 
         //gå till crossroad 1: be user välja, input med check, om rätt gå till professor 1 och diamant(0-1), om fel starta om crossroad1.
 
+        public void GoToCrossroad()
+        {
+            Console.WriteLine("Chose right(r) or left(l)");
+            string crossroadInput = Console.ReadLine();
+            if (crossroadInput != "r" || crossroadInput != "l") 
+            { 
+                Console.WriteLine("Enter r or l please")
+                    Console.ReadKey();
+                  }
+
+
+            Random rnd = new Random();
+            int random = rnd.Next(0, 1);
+            if (random == 0)
+            {
+                Console.WriteLine("Oh no, you go back to the last crossroad on your adventure...");
+            }
+            if (random == 1)
+            {
+                Console.WriteLine("You are wise, good choice!");
+            }
+        }
+
         //Gå till professor 1: visa fråga, input med check alternativt visa ledtråd, om rätt gå till crossroad 2 och diamant(0-1), om fel starta om på crossroad1
 
 

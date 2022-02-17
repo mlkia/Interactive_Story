@@ -9,6 +9,8 @@ public class MainMenu
 
     UserJosefinTest user = new();
 
+    UniverseOneJosefinTest universeOne = new();
+
 
     /// <summary>
     /// Runs the menu.
@@ -29,6 +31,7 @@ public class MainMenu
                 case 1:
                     Console.Clear();
                     // kör spel-metoden
+                    universeOne.GoToCrossroad();
                     break;
 
                 case 2:
