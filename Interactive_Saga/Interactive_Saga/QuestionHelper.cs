@@ -22,7 +22,7 @@ namespace Interactive_Saga
             this.CorrectAnswer = correctAnswer;    
         }
 
-        public void AskQuestion(Character character, User user, QuestionHelper questionHelper)
+        public void AskQuestion(Character character, UserJosefinTest user, QuestionHelper questionHelper)
         {
             Console.WriteLine(character.HelloPhrase);
             Console.WriteLine(questionHelper.Question);
@@ -70,7 +70,7 @@ namespace Interactive_Saga
             CheckAnswer();
         }
 
-        public void RandomDiamond(User user)
+        public void RandomDiamond(UserJosefinTest user)
         {
             Random rnd = new Random();
             int random = rnd.Next(0, 1);

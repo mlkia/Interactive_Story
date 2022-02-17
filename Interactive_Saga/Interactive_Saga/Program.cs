@@ -5,6 +5,6 @@ MessageHelper messageHelper = new(); // instansiera menyn
 messageHelper.WelcomeMessage(); //anropar metod för välkomstmeddelande
 
 MainMenu menu = new(); // instansiera menyn
-menu.RunMenu(/*user, universe*/); //anropa menyn
+//menu.RunMenu(/*user, universe*/); //anropa menyn
 
 //skapa instans av universumen......

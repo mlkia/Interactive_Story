@@ -7,7 +7,7 @@ public class MainMenu
     /// </summary>
     MessageHelper messageHelper = new();
 
-    // UniverseJosefinTest user = new();
+    UserJosefinTest user = new();
 
 
     /// <summary>
@@ -15,7 +15,7 @@ public class MainMenu
     /// </summary>
     public void RunMenu(UniverseJosefinTest user)
     {
-        while (/* user.Level < 3 */ true) // så länge man inte hunnit vinna över alla 3 bossar
+        while (user.Level < 4) // så länge man inte hunnit vinna över alla 3 bossar
         {
             messageHelper.MainMenuMessage();
 
@@ -33,7 +33,7 @@ public class MainMenu
 
                 case 2:
                     Console.Clear();
-                    //user.ShowStats();
+                    user.ShowStats();
                     break;
 
                 case 3:
@@ -42,7 +42,7 @@ public class MainMenu
                     break;
 
                 case 4:
-                    // user.Level = 3;
+                    user.Level = 4;
                     break;
 
                 default:
