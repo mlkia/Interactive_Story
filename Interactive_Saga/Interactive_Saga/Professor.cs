@@ -27,7 +27,5 @@ namespace Interactive_Saga
         QuestionHelper questionHelper4 = new("Test question", "a) alertnative A b) alertnative B c) alertnative C", "Clue", "Correct Answer");
 
         QuestionHelper questionHelper5 = new("Test question", "a) alertnative A b) alertnative B c) alertnative C", "Clue", "Correct Answer");
-
-
     }
 }
