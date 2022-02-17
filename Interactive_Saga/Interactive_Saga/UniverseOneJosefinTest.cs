@@ -6,26 +6,33 @@ using System.Threading.Tasks;
 
 namespace Interactive_Saga
 {
-    public class Professor : Character
+    public class UniverseOneJosefinTest : UniverseJosefinTest
     {
-        // constructor med namn och metoder
+        // välkomstmeddelande till universumet
 
-        public Professor(string name, string helloPhrase) : base(name, helloPhrase) // constructor gjord av VS
-        {
-        }
+        //gå till crossroad 1: be user välja, input med check, om rätt gå till professor 1 och diamant(0-1), om fel starta om crossroad1.
+
+        //Gå till professor 1: visa fråga, input med check alternativt visa ledtråd, om rätt gå till crossroad 2 och diamant(0-1), om fel starta om på crossroad1
+
+
+
+
+
 
         // nedan ska flyttas till rätt universum
-        Professor professor = new("Crazy Professor", "Well Hello..!");
-
-
+        Character professor1 = new("Crazy Professor", "Well Hello..!");
         QuestionHelper questionHelper1 = new("Test question", "a) alertnative A b) alertnative B c) alertnative C", "Clue", "Correct Answer");
 
+        Character professor2 = new("Lazy Professor", "Well Hello..!");
         QuestionHelper questionHelper2 = new("Test question", "a) alertnative A b) alertnative B c) alertnative C", "Clue", "Correct Answer");
 
+        Character professor3 = new("Funny Professor", "Well Hello..!");
         QuestionHelper questionHelper3 = new("Test question", "a) alertnative A b) alertnative B c) alertnative C", "Clue", "Correct Answer");
 
+        Character professor4 = new("Happy Professor", "Well Hello..!");
         QuestionHelper questionHelper4 = new("Test question", "a) alertnative A b) alertnative B c) alertnative C", "Clue", "Correct Answer");
 
+        Character professor5 = new("Sad Professor", "Well Hello..!");
         QuestionHelper questionHelper5 = new("Test question", "a) alertnative A b) alertnative B c) alertnative C", "Clue", "Correct Answer");
     }
 }
