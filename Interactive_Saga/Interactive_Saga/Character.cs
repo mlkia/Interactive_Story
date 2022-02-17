@@ -8,8 +8,17 @@ namespace Interactive_Saga    // behövde skapa en ny characterklass för att ku
 {
     public class Character
     {
-        public int Name { get; set; }
+        public string Name { get; set; }
+        public string HelloPhrase { get; set; }
 
+        //public string CongratulationsPhrase { get; set; }
+        //public string IncorrectAnswerPhrase { get; set; }
+        //public string GoodbyePhrase { get; set; }
 
+        public Character(string name, string helloPhrase)
+        {
+            this.Name = name;
+            this.HelloPhrase = helloPhrase;
+        }
     }
 }
