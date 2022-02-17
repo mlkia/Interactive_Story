@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Interactive_Saga    // behövde skapa en ny characterklass för att kunna exprimentera med hur vi ställer frågor osv / Josefin
+namespace Interactive_Saga    // VI ANVÄNDER OSS AV 1 KARAKTÄR OCH SKAPAR MÅNGA OLIKA INSTANSER AV DEN I VARJE VÄRLD
 {
     public class Character
     {
