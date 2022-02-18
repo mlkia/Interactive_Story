@@ -1,47 +1,39 @@
-﻿public class Character:Universe
+﻿using Interactive_Saga;
+
+public class Character // basklass för karaktär 
 {
-    public string Name { get; set; } = "test person";
-    public string HelpPhrase { get; set; }
-    List <string> questions = new List <string> ();
-    public void CreateList()
+    public string Name { get; }
+    private List<Question> Questions;
+
+    private static Random random = new Random(); // random-funktion skapas i början, så att den inte anropas på nytt varje gång
+
+    public Character(string name, List<Question> questions) // karaktär har med sig lista med frågor 
     {
-        questions.Add("Vad heter Danmarks huvudstad?");
-        questions.Add("Hur långt är avstånd i km mellan Jorden och Månen?");
-        questions.Add("Var bor påfåglar?");
+        Name = name;
+        Questions = questions;
     }
 
-    public void AskQuestion(List<string> list)
+    public bool AskQuestion() // frågefunktion har bool, så att anroparen kan bedömma vad som ska ske vid rätt/fel svar 
     {
-        foreach (var item in questions)
+        var randomQuestion = Questions[random.Next(Questions.Count)];
+        Console.WriteLine(randomQuestion.Text);
+
+        for (int i = 0; i < randomQuestion.Answers.Count; i++)
         {
-            Random random = new Random();
-            int randomisedNumber=random.Next(0, questions.Count);
-            Console.WriteLine(questions[randomisedNumber]);
-        }
-        Console.WriteLine("1.Köpenhamn", "2. Oslo", "3. Berlin");
-        int UserAnswer = int.Parse(Console.ReadLine());
-        if (UserAnswer == 1)
-        {
-            GoToCrossNextRoad();
-        }
-        else 
-        {
-            GoToPreviousCharacterQuestion();
+            var answer = randomQuestion.Answers[i];
+
+            Console.WriteLine($"{i + 1}: {answer}"); // frågor och svar börjar från 1 till 3
         }
 
+        int userAnswer = int.Parse(Console.ReadLine()) - 1;
+
+        return randomQuestion.IsCorrectAnswer(userAnswer);
     }
 
 }
 
 
 
-        // TAKE USER INPUT
-        // CHECK IF CORRECT ANSWER
-
-        // IF CORRECT ANSWER
-        // GO TO NEXT LEVEL
-
-        // IF NEXT LEVEL IS NULL
-        // GO TO NEXT UNIVERSE
+       
 
     

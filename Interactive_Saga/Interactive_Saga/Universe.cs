@@ -1,32 +1,21 @@
 ﻿using System;
-public abstract class  Universe
+public class Universe // basen för universe 
 {
-  
-    public int  Level  { get; set; }
-
-    public void GoToCrossRoad()
+    public Universe(string name, int level, Character character)
     {
-        // Gå till crossroad.cs-klassen
-        throw new NotImplementedException();
+        Name = name;
+        Level = level;
+        Character = character;
     }
 
-    public void GoToQuestionHelper()
-    {
-        // Gå till QQuestionhelper.cs
-        throw new NotImplementedException();
-    }
-
+    public string Name { get; }
+    public int Level { get; }
+    public Character Character { get; }
 }
 
 
 
-        // TAKE USER INPUT
-        // CHECK IF CORRECT ANSWER
 
-        // IF CORRECT ANSWER
-        // GO TO NEXT LEVEL
 
-        // IF NEXT LEVEL IS NULL
-        // GO TO NEXT UNIVERSE
 
-    
+
