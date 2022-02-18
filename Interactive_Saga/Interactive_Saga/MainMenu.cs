@@ -7,7 +7,7 @@ public class MainMenu
     /// </summary>
     MessageHelper messageHelper = new();
 
-    UserJosefinTest user = new();
+    UserJosefinTest user = new("testnamn från huvudmenyn", 0, 1);
 
     UniverseOneJosefinTest universeOne = new();
 
@@ -15,7 +15,7 @@ public class MainMenu
     /// <summary>
     /// Runs the menu.
     /// </summary>
-    public void RunMenu(UniverseJosefinTest user)
+    public void RunMenu(UserJosefinTest user, UniverseOneJosefinTest universeOne)
     {
         while (user.Level < 4) // så länge man inte hunnit vinna över alla 3 bossar
         {

@@ -5,14 +5,15 @@
         /// <summary>
         /// Welcomes the user.
         /// </summary>
-        public void WelcomeMessage()
+        public void WelcomeMessage(UserJosefinTest user)
         {
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("WELCOME MESSAGE TO THE USER");
             Thread.Sleep(1000);
             Console.WriteLine("Tell me your name...");
             string userName = Console.ReadLine();
-            Console.WriteLine("Hello " + userName);
+            user.UserName = userName;
+            Console.WriteLine("Hello " + user.UserName);
             Console.ForegroundColor = ConsoleColor.White;
 
             Console.WriteLine("Press any key to continue...");

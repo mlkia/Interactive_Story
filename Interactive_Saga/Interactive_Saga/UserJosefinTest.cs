@@ -12,12 +12,19 @@ namespace Interactive_Saga
         public int Diamonds { get; set; } = 0;
         public int Level { get; set; } = 1;   //börjar på 1, slutar på 3(4?)
 
-        public void ShowStats()
+        ////constructor....
+        //public UserJosefinTest(string userName, int diamonds, int level)                     // behövs???
+        //{
+        //    this.UserName = userName;
+        //    this.Diamonds = diamonds;
+        //    this.Level = level;
+        //}
+
+        public void ShowStats(UserJosefinTest user)
         {
-            // visa stats
-            Console.WriteLine("Name:     " + UserName);
-            Console.WriteLine("Diamonds:    " + Diamonds);
-            Console.WriteLine("Level:      " + Level + "/3");
+            Console.WriteLine("Name:     " + user.UserName);
+            Console.WriteLine("Diamonds:    " + user.Diamonds);
+            Console.WriteLine("Level:      " + user.Level + "/3");
            
         }
     }
