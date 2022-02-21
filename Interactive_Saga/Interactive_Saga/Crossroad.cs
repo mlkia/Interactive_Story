@@ -57,7 +57,7 @@ Console.WriteLine($"Right direction is {(rightDir ? "left" : "right")}"); // Gö
         {
             Console.WriteLine("Grattis! Du valde rätt väg!");
             Random random = new Random();
-            int randomNumberOfDiamonds = random.Next(0, 1);
+            int randomNumberOfDiamonds = random.Next(0, 2);
             Console.WriteLine(" Du får " + randomNumberOfDiamonds + " diamanter!");
             CorrectAnswer = true;
             GoToCharacterQuestion();
@@ -72,7 +72,8 @@ Console.WriteLine($"Right direction is {(rightDir ? "left" : "right")}"); // Gö
 
         private void GoToCharacterQuestion() // Någon annan
         {
-            throw new NotImplementedException();
+            global::System.Console.WriteLine("Nu kommer du att få en character question (ej implementerat)");
+            //throw new NotImplementedException();
         }
 
         private void ReturnToPreviousCrossroadOnThisLevel()
