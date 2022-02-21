@@ -2,26 +2,22 @@
 {
     public class MessageHelper
     {
-        /// <summary>
-        /// Welcomes the user.
-        /// </summary>
-        public void WelcomeMessage()
+        public void WelcomeMessage(UserJosefinTest user)   // spelas upp när man öppnar programmet, frågar om user name och lägger det i user.UserName
         {
             Console.ForegroundColor = ConsoleColor.DarkBlue;
             Console.WriteLine("WELCOME MESSAGE TO THE USER");
             Thread.Sleep(1000);
             Console.WriteLine("Tell me your name...");
             string userName = Console.ReadLine();
-            Console.WriteLine("Hello " + userName);
+            user.UserName = userName;
+            Console.WriteLine("Hello " + user.UserName);
             Console.ForegroundColor = ConsoleColor.White;
+
             Console.WriteLine("Press any key to continue...");
             Console.ReadKey();
         }
 
-        /// <summary>
-        /// Mainmenu message.
-        /// </summary>
-        public void MainMenuMessage()
+        public void MainMenuMessage()  // huvudmenyn
         {
             Console.Clear();
             Console.WriteLine("Main Menu");
@@ -32,10 +28,7 @@
             Console.WriteLine("4) Exit Game");
         }
 
-        /// <summary>
-        /// Ruleses the of game.
-        /// </summary>
-        public void RulesOfGame()
+        public void RulesOfGame()  // spelets regler
         {
             Console.Clear();
             Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -46,10 +39,7 @@
             Console.ReadKey();
         }
 
-        /// <summary>
-        /// Error message for the menu.
-        /// </summary>
-        public void MenuErrorMessage()
+        public void MenuErrorMessage() // felmeddelande för meny-switchen
         {
             Console.ForegroundColor = ConsoleColor.Red;
             Console.WriteLine("Enter a number between 1-4 to chose an alternative from the menu.");

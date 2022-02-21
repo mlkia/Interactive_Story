@@ -1,48 +1,45 @@
 ﻿using Interactive_Saga;
 
-public class MainMenu
+public class MainMenu  
 {
-    /// <summary>
-    /// The message helper instance
-    /// </summary>
+
     MessageHelper messageHelper = new();
 
-    /// <summary>
-    /// Runs the menu.
-    /// </summary>
-    public void RunMenu(/* User user, Universe universe*/)
-    {
-        while (/* user.WinOverBoss < 3 */ true) // så länge man inte hunnit vinna över alla 3 bossar
-        {
-            messageHelper.MainMenuMessage();
+    UserJosefinTest user = new("testnamn från huvudmenyn", 0, 1);
 
-            string userMenuInput = Console.ReadLine();
+    public void RunMenu(UserJosefinTest user)
+    {
+        while (user.Level < 4) // så länge man inte hunnit vinna över alla 3 bossar
+        {
+            messageHelper.MainMenuMessage();  // anropar metoden som visar huvudmenyn
+
+            string userMenuInput = Console.ReadLine(); // ta input från user
 
             int menuInputInt = 0;
             int.TryParse(userMenuInput, out menuInputInt);
 
-            switch (menuInputInt)
+            switch (menuInputInt)   
             {
-                case 1:
+                case 1: // gå till crossroad i universeOne
                     Console.Clear();
-                    // kör spel-metoden
+                    //universeOne.GoToCrossroad();
                     break;
 
-                case 2:
+                case 2:// visa user stats
                     Console.Clear();
-                    // kör show stats-metoden
+                   // user.ShowStats();                                        // funkar inte.... :(
                     break;
 
-                case 3:
+                case 3: // visa spelets regler, anropar textmetod från messagehelper.cs
                     Console.Clear();
                     messageHelper.RulesOfGame();
                     break;
 
-                case 4:
-                    // user.WinOverBoss = 3;
+                case 4: // exit game
+                    user.Level = 4;
                     break;
 
-                default:
+                default: // error message från messagehelper.cs
                     messageHelper.MenuErrorMessage();
                     Console.ReadKey();
                     break;
