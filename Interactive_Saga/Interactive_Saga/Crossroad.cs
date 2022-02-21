@@ -32,7 +32,7 @@ Console.WriteLine($"Right direction is {(rightDir ? "left" : "right")}"); // Gö
 
                     // Randomisering över huruvida vänster eller höger är korrekt väg att gå:
                     Random rnd = new Random();
-                    int randomised = rnd.Next(0, 1);
+                    int randomised = rnd.Next(0, 2);
                     if (randomised == 0) CorrectPath();
                     if (randomised == 1) IncorrectPath();
                     break;
@@ -42,7 +42,7 @@ Console.WriteLine($"Right direction is {(rightDir ? "left" : "right")}"); // Gö
 
                     // Randomisering över huruvida vänster eller höger är korrekt väg att gå:
                     Random rnd1 = new Random();
-                    int randomised1 = rnd1.Next(0, 1);
+                    int randomised1 = rnd1.Next(0, 2);
                     if (randomised1 == 0) IncorrectPath();
                     if (randomised1 == 1) CorrectPath();
                     break;
@@ -57,7 +57,7 @@ Console.WriteLine($"Right direction is {(rightDir ? "left" : "right")}"); // Gö
         {
             Console.WriteLine("Grattis! Du valde rätt väg!");
             Random random = new Random();
-            int randomNumberOfDiamonds = random.Next(0, 1);
+            int randomNumberOfDiamonds = random.Next(0, 2); // Randomisering, de får en eller två diamanter.
             Console.WriteLine(" Du får " + randomNumberOfDiamonds + " diamanter!");
             CorrectAnswer = true;
             GoToCharacterQuestion();
@@ -72,7 +72,7 @@ Console.WriteLine($"Right direction is {(rightDir ? "left" : "right")}"); // Gö
 
         private void GoToCharacterQuestion() // Någon annan
         {
-            throw new NotImplementedException();
+            global::System.Console.WriteLine("Nu kommer du att få en character question (ej implenterat).");
         }
 
         private void ReturnToPreviousCrossroadOnThisLevel()
