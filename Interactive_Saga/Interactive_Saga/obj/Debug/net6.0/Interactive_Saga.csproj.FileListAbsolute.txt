@@ -1,0 +1,15 @@
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\bin\Debug\net6.0\Interactive_Saga.exe
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\bin\Debug\net6.0\Interactive_Saga.deps.json
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\bin\Debug\net6.0\Interactive_Saga.runtimeconfig.json
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\bin\Debug\net6.0\Interactive_Saga.dll
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\bin\Debug\net6.0\ref\Interactive_Saga.dll
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\bin\Debug\net6.0\Interactive_Saga.pdb
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\Interactive_Saga.csproj.AssemblyReference.cache
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\Interactive_Saga.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\Interactive_Saga.AssemblyInfoInputs.cache
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\Interactive_Saga.AssemblyInfo.cs
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\Interactive_Saga.csproj.CoreCompileInputs.cache
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\Interactive_Saga.dll
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\ref\Interactive_Saga.dll
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\Interactive_Saga.pdb
+C:\Users\x\OneDrive\Documents\Local souce\Quality assurance\Interactive_Saga\Interactive_Saga\Interactive_Saga\obj\Debug\net6.0\Interactive_Saga.genruntimeconfig.cache
