@@ -1,13 +1,13 @@
 ﻿using Interactive_Saga;
 
-public class Character // basklass för karaktär 
+public class CharacterAlina // basklass för karaktär 
 {
     public string Name { get; }
-    private List<Question> Questions;
+    private List<QuestionAlina> Questions;
 
     private static Random random = new Random(); // random-funktion skapas i början, så att den inte anropas på nytt varje gång
 
-    public Character(string name, List<Question> questions) // karaktär har med sig lista med frågor 
+    public CharacterAlina(string name, List<QuestionAlina> questions) // karaktär har med sig lista med frågor 
     {
         Name = name;
         Questions = questions;

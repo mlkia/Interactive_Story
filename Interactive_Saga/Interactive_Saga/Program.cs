@@ -9,6 +9,9 @@ namespace Interactive_Saga.Program
         {
             var universes = new List<Universe>() { CreateUniverseOne(), CreateUniverseTwo(), CreateUniverseThree() };
 
+            var currentUniverse = CreateUniverseOne();
+
+            var isCorrectAnswer = currentUniverse.Character.AskQuestion();
 
             //public void CreateList()
             {
@@ -22,19 +25,36 @@ namespace Interactive_Saga.Program
 
         private static Universe CreateUniverseOne()
         {
-            var lurifax = new Character("Lurifax", new List<Question>);
+            var questions = new List<QuestionAlina>()
+            {
+                new QuestionAlina(
+                    text: "Vilka är mest aktiva i skogen?",
+                    answers: new List<string>
+                    {
+                        "Mössen",
+                        "Grodorna",
+                        "Träna"
+                    },
+                    correctAnswerIndex: 3
+                ),
+                new Question(
+                    )
+            };
+
+
+            var lurifax = new CharacterAlina("Lurifax", questions);
             return new Universe("Riddle", 1, lurifax);
         }
 
         private static Universe CreateUniverseTwo()
         {
-            var matematikProfessor = new Character("Matematikprofessor", new List<Question>);
+            var matematikProfessor = new CharacterAlina("Matematikprofessor", new List<QuestionAlina>);
             return new Universe("Matematikuppgifter", 2, matematikProfessor);
         }
 
         private static Universe CreateUniverseThree()
         {
-            var sportKommentator = new Character("Sportkommmentator", new List<Question>);
+            var sportKommentator = new CharacterAlina("Sportkommmentator", new List<QuestionAlina>);
             return new Universe("Sportfrågor", 3, sportKommentator);
         }
     }

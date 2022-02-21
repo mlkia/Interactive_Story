@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace Interactive_Saga
 {
-    public class Question
+    public class QuestionAlina
     {
-        public Question(string text, List<string> answers, int correctAnswerIndex) // konstruktör för fråga
+        public QuestionAlina(string text, List<string> answers, int correctAnswerIndex) // konstruktör för fråga
         {
             Text = text;
             Answers = answers;

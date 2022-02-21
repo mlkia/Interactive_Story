@@ -1,7 +1,7 @@
 ﻿using System;
 public class Universe // basen för universe 
 {
-    public Universe(string name, int level, Character character)
+    public Universe(string name, int level, CharacterAlina character)
     {
         Name = name;
         Level = level;
@@ -10,7 +10,7 @@ public class Universe // basen för universe
 
     public string Name { get; }
     public int Level { get; }
-    public Character Character { get; }
+    public CharacterAlina Character { get; }
 }
 
 
