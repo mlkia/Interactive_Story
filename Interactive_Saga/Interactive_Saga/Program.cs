@@ -1,4 +1,5 @@
-﻿using System;
+
+using System;
 
 namespace Interactive_Saga.Program
 {
@@ -59,3 +60,4 @@ namespace Interactive_Saga.Program
         }
     }
 }
+
