@@ -12,18 +12,21 @@
 
         public void ShowStates()
         {
-            var TheAnswers = new Character();
+            var TheAnswers = new NumOfAnswer();
 
             int[] numOfAnswers = new int[2];
 
-            numOfAnswers = TheAnswers.AskQuestion();
+            numOfAnswers = TheAnswers.numOfAnswer();
 
             NumberOfCorrectAnswers = numOfAnswers[0];
             NumberOfWrongAnswers = numOfAnswers[1];
 
-            Console.WriteLine("You have " + NumberOfCorrectAnswers + " Right answers");
-            Console.WriteLine("You have " + NumberOfWrongAnswers + " Wrong answers");
-        }
 
+            Console.WriteLine("Name:     " + UserName);
+            Console.WriteLine("You have: " + NumberOfCorrectAnswers + " Right answers");
+            Console.WriteLine("You have: " + NumberOfWrongAnswers + " Wrong answers");
+            Console.WriteLine("You have:    " + Diamonds + "Diamonds");
+            Console.WriteLine("You are in Level:      " + Level + "/3");
+        }
     }
 }
