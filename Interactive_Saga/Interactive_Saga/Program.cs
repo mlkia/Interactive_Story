@@ -1,14 +1,5 @@
-<<<<<<< HEAD
-﻿// See https://aka.ms/new-console-template for more information
-using Interactive_Saga;
 
-MessageHelper messageHelper = new(); // instansiera menyn
-messageHelper.WelcomeMessage(); //anropar metod för välkomstmeddelande
-
-MainMenu menu = new(); // instansiera menyn
-menu.RunMenu(/*user, universe*/); //anropa menyn
-=======
-﻿using System;
+using System;
 
 namespace Interactive_Saga.Program
 {
@@ -69,4 +60,4 @@ namespace Interactive_Saga.Program
         }
     }
 }
->>>>>>> alina-implement-universe
+
