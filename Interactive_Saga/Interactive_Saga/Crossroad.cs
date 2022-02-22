@@ -70,7 +70,7 @@ Console.WriteLine($"Right direction is {(rightDir ? "left" : "right")}"); // Gö
             ReturnToPreviousCrossroadOnThisLevel();
         }
 
-        private void GoToCharacterQuestion() // Någon annan
+        private void GoToCharacterQuestion()
         {
             global::System.Console.WriteLine("Nu kommer du att få en character question (ej implenterat).");
         }
